@@ -10,4 +10,10 @@
 		class="edu.springapp.musicplayer.playlist.RockMusic"></bean>
 	<bean id="pop-music-1"
 		class="edu.springapp.musicplayer.playlist.PopMusic"></bean>
+
+	<bean id="music-player-1"
+		class="edu.springapp.musicplayer.player.MusicPlayer">
+		<property name="music" ref="classical-music-1"></property>
+	</bean>
+	
 </beans>
